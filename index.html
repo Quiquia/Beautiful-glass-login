@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beautiful glass login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginContent">
+        <img src="./assets/bg-login.png" alt="login image" class="loginImg" />
+        <form action="" class="loginForm">
+          <div>
+            <h1 class="loginTitle"><span>Welcome</span> Back</h1>
+            <p class="loginDescription">Welcome! Please login to continue</p>
+          </div>
+
+          <div>
+            <div class="loginInputs">
+              <div>
+                <label for="" class="loginLabel">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="login_input"
+                  required
+                />
+              </div>
+              <div>
+                <label for="" class="loginLabel">Password</label>
+                <div class="login_box">
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    class="login_input"
+                    required
+                    id="input-pass"
+                  />
+                  <i class="ri-eye-off-line login-eye" id="input-icon"></i>
+                </div>
+              </div>
+              <div class="loginCheck">
+                <input type="checkbox" class="loginCheck-input" />
+                <label class="loginCheck-label">Remenber me</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="loginButtons">
+              <button class="login-button">Log in</button>
+              <button class="login-button login-button-ghost">Sign Up</button>
+            </div>
+            <a href="#" class="loginForgot">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

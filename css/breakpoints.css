@@ -1,0 +1,89 @@
+/*for small devices*/
+
+@media screen and (max-width: 360px) {
+  .loginButtons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* for medium devices */
+@media screen and (min-width: 576px) {
+  .loginForm {
+    width: 400px;
+    justify-content: center;
+  }
+}
+
+/* for large devices*/
+
+@media screen and (min-width: 1064px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .loginContent {
+    width: 1024px;
+    height: 600px;
+    justify-content: flex-end;
+  }
+
+  .loginImg {
+    border-radius: 3.5rem;
+    box-shadow: 0 24px 48px hsla(244, 75%, 36%, 0.45);
+  }
+  .loginForm {
+    justify-self: flex-end;
+    margin-right: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loginContent {
+    height: 700px;
+  }
+
+  .loginForm {
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    border: 2.5px solid hsla(244, 16%, 92%, 0.75);
+  }
+
+  .loginDescription,
+  .loginLabel,
+  .loginButton {
+    font-size: var(--normal-fon-size);
+  }
+  .loginInputs {
+    row-gap: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .login_input {
+    border: 2.5px solid var(--text-color);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    width: 100%;
+  }
+
+  .login_input:focus,
+  .login_input:valid {
+    border: 2.5px solid var(--first-color);
+  }
+
+  .login-button {
+    padding-block: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .login-button-ghost {
+    border: 2.5px solid var(--first-color);
+  }
+
+  .loginForgot {
+    font-size: var(--smaller-fonst-size);
+  }
+}
